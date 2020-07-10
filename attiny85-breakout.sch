@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 5EF986CE
+P 3400 3150
+F 0 "U1" H 2871 3196 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 2871 3105 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3400 3150 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3400 3150 50  0001 C CNN
+	1    3400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J3
+U 1 1 5EF98C46
+P 5050 3100
+F 0 "J3" H 4721 3196 50  0000 R CNN
+F 1 "AVR-ISP-6" H 4721 3105 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 4800 3150 50  0001 C CNN
+F 3 " ~" H 3775 2550 50  0001 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5EF9A749
+P 4950 2600
+F 0 "#PWR0101" H 4950 2450 50  0001 C CNN
+F 1 "VCC" H 4965 2773 50  0000 C CNN
+F 2 "" H 4950 2600 50  0001 C CNN
+F 3 "" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5EF9AAAC
+P 3400 2550
+F 0 "#PWR0102" H 3400 2400 50  0001 C CNN
+F 1 "VCC" H 3415 2723 50  0000 C CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EF9AC67
+P 3400 3750
+F 0 "#PWR0103" H 3400 3500 50  0001 C CNN
+F 1 "GND" H 3405 3577 50  0000 C CNN
+F 2 "" H 3400 3750 50  0001 C CNN
+F 3 "" H 3400 3750 50  0001 C CNN
+	1    3400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EF9AE2A
+P 4950 3500
+F 0 "#PWR0104" H 4950 3250 50  0001 C CNN
+F 1 "GND" H 4955 3327 50  0000 C CNN
+F 2 "" H 4950 3500 50  0001 C CNN
+F 3 "" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5EF9EA56
+P 3600 4450
+F 0 "J1" H 3708 4731 50  0000 C CNN
+F 1 "LeftConn" H 3708 4640 50  0000 C CNN
+F 2 "attiny85-breakout:PinHeader_1x04_P2.54mm_Vertical_FlippedModel" H 3600 4450 50  0001 C CNN
+F 3 "~" H 3600 4450 50  0001 C CNN
+	1    3600 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 2850 2    50   Input ~ 0
+PB0
+Text GLabel 4000 2950 2    50   Input ~ 0
+PB1
+Text GLabel 4000 3050 2    50   Input ~ 0
+PB2
+Text GLabel 4000 3150 2    50   Input ~ 0
+PB3
+Text GLabel 4000 3250 2    50   Input ~ 0
+PB4
+Text GLabel 4000 3350 2    50   Input ~ 0
+PB5
+Text GLabel 5450 2900 2    50   Input ~ 0
+PB1
+Text GLabel 5450 3000 2    50   Input ~ 0
+PB0
+Text GLabel 5450 3100 2    50   Input ~ 0
+PB2
+Text GLabel 5450 3200 2    50   Input ~ 0
+PB5
+Text GLabel 3800 4350 2    50   Input ~ 0
+PB5
+Text GLabel 3800 4450 2    50   Input ~ 0
+PB3
+Text GLabel 3800 4550 2    50   Input ~ 0
+PB4
+$Comp
+L power:GND #PWR0105
+U 1 1 5EFA2ED5
+P 3800 4650
+F 0 "#PWR0105" H 3800 4400 50  0001 C CNN
+F 1 "GND" H 3805 4477 50  0000 C CNN
+F 2 "" H 3800 4650 50  0001 C CNN
+F 3 "" H 3800 4650 50  0001 C CNN
+	1    3800 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 4450 2    50   Input ~ 0
+PB2
+Text GLabel 4700 4550 2    50   Input ~ 0
+PB1
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5EF9DFF4
+P 4500 4450
+F 0 "J2" H 4608 4731 50  0000 C CNN
+F 1 "RightConn" H 4608 4640 50  0000 C CNN
+F 2 "attiny85-breakout:PinHeader_1x04_P2.54mm_Vertical_FlippedModel" H 4500 4450 50  0001 C CNN
+F 3 "~" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 4650 2    50   Input ~ 0
+PB0
+$Comp
+L power:VCC #PWR0106
+U 1 1 5EFA6DFB
+P 5050 4350
+F 0 "#PWR0106" H 5050 4200 50  0001 C CNN
+F 1 "VCC" H 5065 4523 50  0000 C CNN
+F 2 "" H 5050 4350 50  0001 C CNN
+F 3 "" H 5050 4350 50  0001 C CNN
+	1    5050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4350 5050 4350
+$Comp
+L power:VCC #PWR0107
+U 1 1 5EFA813C
+P 7000 2850
+F 0 "#PWR0107" H 7000 2700 50  0001 C CNN
+F 1 "VCC" H 7015 3023 50  0000 C CNN
+F 2 "" H 7000 2850 50  0001 C CNN
+F 3 "" H 7000 2850 50  0001 C CNN
+	1    7000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5EFA85EF
+P 7450 2850
+F 0 "#PWR0108" H 7450 2600 50  0001 C CNN
+F 1 "GND" H 7455 2677 50  0000 C CNN
+F 2 "" H 7450 2850 50  0001 C CNN
+F 3 "" H 7450 2850 50  0001 C CNN
+	1    7450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EFA8AB2
+P 7000 2850
+F 0 "#FLG0101" H 7000 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 7000 3023 50  0000 C CNN
+F 2 "" H 7000 2850 50  0001 C CNN
+F 3 "~" H 7000 2850 50  0001 C CNN
+	1    7000 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EFAB20D
+P 7450 2850
+F 0 "#FLG0102" H 7450 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 3023 50  0000 C CNN
+F 2 "" H 7450 2850 50  0001 C CNN
+F 3 "~" H 7450 2850 50  0001 C CNN
+	1    7450 2850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
